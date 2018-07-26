@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#small,#big{
+    width: 400px;
+    height: 400px;
+    float: left;
+    position: relative;
+}
+#big{
+    overflow: hidden;
+    display: none;
+}
+#drag{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    opacity: .5;
+    filter:alpha(opacity=50);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#mask{
+    background-color: #ff0036;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
