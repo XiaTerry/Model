@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a{
+            text-decoration:none;
+        }
+        li{
+            list-style: none;
+        }
+        #cate_nav{
+            width: 156px;
+            float: left;
+            margin-right: 15px;
+        }
+        #cate_nav .title{
+            border-bottom:2px solid #54a900;
+        }
+        #cate_nav ul a{
+            color:#464646;
+        }
+        #cate_nav ul li{
+            line-height: 32px;
+            height: 32px;
+            background:url("img/cate_li.png") no-repeat right 15px;
+            font-size: 10px;
+        }
+        #cate_nav ul li .leva{
+            display: block;
+            width: 156px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 3px;
+            border:1px solid #fff;
+            border-bottom-color: #ededed;
+            border-right: none;
+        }
+        #cate_nav ul li .leva:hover ,#cate_nav ul li .over .leva{
+            text-decoration:none;
+            background:#FFF;
+            border-color: #40aa53;
+            z-index:9;
+            position:absolute;
+        }
+        #cate_nav ul li .over{
+            position:relative;
+            height: 30px;
+        }
+        #cate_nav ul .num{
+            color: #999;
+        }
+        #cate_nav ul ul{
+            display: none;
+            position: absolute;
+            border:1px solid #40aa53;
+            left: 162px;
+            top: 0;
+            width: 200px;
+            background: #ffffff;
+            z-index: 1;
+            padding: 5px 15px;
+            box-shadow:0 1px 5px #ccc;
+            transition: all .1s ease;
+        }
+        #cate_nav ul ul li{
+            height: 25px;
+            line-height: 25px;
+            background: none;
+        }
+        #cate_nav ul ul a:hover{
+            background: none;
+            text-decoration:underline;
+            color: #093;
+        }
+    </style>
+</head>
+<body>
+<div id="cate_nav">
+    <div class="title">
+        <h4>&nbsp;&nbsp;代码分享»</h4>
+    </div>
+    <div class="block_content">
+        <ul class="cate_menu">
+            <li>
+                <a href="" class="leva">HTML<span class="num"">(382)</span></a>
+                <ul>
+                    <li>
+                        <a href="">基础标签实例</a><span class="num"> (96)</span>
+                    </li>
+                    <li>
+                        <a href="">链接实例</a><span class="num"> (96)</span>
+                    </li>
+                    <li>
+                        <a href="">表格实例</a><span class="num"> (96)</span>
+                    </li>
+                </ul>
+
+            </li>
+            <li>
+                <a href=""  class="leva">CSS<span class="num">(521)</span></a>
+                <ul>
+                    <li>
+                        <a href="">背景(background)实例</a><span class="num"> (29)</span>
+                    </li>
+                    <li>
+                        <a href="">字体(font)实例</a><span class="num"> (42)</span>
+                    </li>
+                    <li>
+                        <a href="">边框(border)实例</a><span class="num"> (4)</span>
+                    </li>
+                    <li>
+                        <a href="">外边距 (margin) 实例</a><span class="num"> (28)</span>
+                    </li>
+                    <li>
+                        <a href="">内边距 (padding) 实例</a><span class="num"> (66)</span>
+                    </li>
+                    <li>
+                        <a href="">列表实例</a><span class="num"> (38)</span>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="" class="leva">JavaScript<span class="num">(654)</span></a>
+                <ul>
+                    <li>
+                        <a href="">String（字符串）对象实例</a><span class="num"> (11)</span>
+                    </li>
+                    <li>
+                        <a href="">Date（日期）对象实例</a><span class="num"> (16)</span>
+                    </li>
+                    <li>
+                        <a href="">Boolean（布尔）对象实例</a><span class="num"> (87)</span>
+                    </li>
+                    <li>
+                        <a href="">Array（数组）实例</a><span class="num"> (5)</span>
+                    </li>
+                    <li>
+                        <a href="">Math（算数）对象实例</a><span class="num"> (23)</span>
+                    </li>
+                    <li>
+                        <a href="">HTML DOM 实例</a><span class="num"> (56)</span>
+                    </li>
+                    <li>
+                        <a href="">BOM 实例</a><span class="num"> (18)</span>
+                    </li>
+                    <li>
+                        <a href="">XML DOM 实例</a><span class="num"> (30)</span>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="" class="leva">jQuery<span class="num">(92)</span></a>
+                <ul>
+                    <li>
+                        <a href="">HTML 操作 实例</a><span class="num"> (29)</span>
+                    </li>
+                    <li>
+                        <a href="">CSS 操作 实例</a><span class="num"> (33)</span>
+                    </li>
+                    <li>
+                        <a href="">动画 操作 实例</a><span class="num"> (16)</span>
+                    </li>
+                    <li>
+                        <a href="">Ajax 操作 实例</a><span class="num"> (14)</span>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="" class="leva">XML<span class="num">(151)</span></a>
+            </li>
+            <li>
+                <a href="" class="leva">Java<span class="num">(89)</span></a>
+            </li>
+            <li>
+                <a href="" class="leva">JSP&Servlet<span class="num">(137)</span></a>
+            </li>
+            <li>
+                <a href="" class="leva">JDBC<span class="num">(306)</span></a>
+            </li>
+            <li>
+                <a href="" class="leva">Struts<span class="num">(44)</span></a>
+            </li>
+            <li>
+                <a href="" class="leva">Spring<span class="num">(128)</span></a>
+            </li>
+            <li>
+                <a href="" class="leva">Hibernate<span class="num">(40)</span></a>
+            </li>
+            <li>
+                <a href="" class="leva">其他<span class="num">(435)</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="javascript/jquery-1.12.4.js"></script>
+<script>
+
+    $(function () {
+        $('.cate_menu').find('li').hover(function () {
+            $(this).addClass('over');
+            $(this).find('ul:first').show();
+        },function () {
+            $(this).removeClass('over');
+            $(this).find('ul:first').hide();
+        });
+    });
+</script>
+</body>
+</html>
