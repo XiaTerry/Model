@@ -43,7 +43,7 @@ html,body,.loader{
     border-left-color:lime;
     transform:rotate(180deg);
 }
-.loader .face .circle::before {
+.loader .face .circle::after {
     position: absolute;
     content: '';
     width: 10px;
@@ -52,6 +52,13 @@ html,body,.loader{
     left: -5px;
     top: -5px;
     border-radius: 50%;
+
+    box-shadow: 0 0 20px gold,
+    0 0 40px gold,
+    0 0 60px gold,
+    0 0 80px gold,
+    0 0 100px gold,
+    0 0 0 5px rgba(255 ,255, 0, .1)
 }
 #circle2::after{
     position: absolute;
@@ -67,16 +74,9 @@ html,body,.loader{
     0 0 60px lime,
     0 0 80px lime,
     0 0 100px lime,
-    0 0 0 5px rgba(255 ,255, 0, .1)
+    0 0 0 5px rgba(0 ,255, 0, .1)
 }
-.loader .face .circle::before{
-    box-shadow: 0 0 20px gold,
-    0 0 40px gold,
-    0 0 60px gold,
-    0 0 80px gold,
-    0 0 100px gold,
-    0 0 0 5px rgba(255 ,255, 0, .1)
-}
+
 .loader .face .circle{
     background-color: transparent;
 }

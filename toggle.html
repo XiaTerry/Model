@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <title>滑动toggle交互控件</title>
     <style>
-        html,
-        body,
-        .checkbox .inner,
-        .checkbox .inner .toggle
+        html, body,
+        .checkbox .inner
         {
             height: 100%;
             display: flex;
-            justify-items: center;
+            justify-content: center;
             align-items: center;
+            background-color: #00336c;
         }
         .checkbox{
             width: 160px;
@@ -22,6 +21,8 @@
             font-size: 40px;
         }
         .checkbox .inner{
+            margin-top: 12px;
+            margin-left: 15px;
             width: 128px;
             height: 56px;
             background: linear-gradient(dimgray,silver);
@@ -32,12 +33,14 @@
             width: 56px;
             height: 56px;
             background: linear-gradient(to top,silver, white);
-            /*border-radius:0 0.4em 0.6em rgba(0,0,0,0.2);*/
+            border-radius:50%;
             position: relative;
-            left: 30%;
+            left: -35px;
             transition:0.5s;
+            cursor:pointer;
         }
         .checkbox .inner .toggle::before{
+            margin-top: 5px;
             content: 'OFF';
             position: absolute;
             height: 80%;
