@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单导航菜单</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html ,body{
+            height: 100%;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+        }
+        a{
+            text-decoration: none;
+            color: #666;
+            font-size: 18px;
+        }
+        li{
+            list-style: none;
+        }
+        #menu{
+            height: 40px;
+        }
+        #menu li a{
+            background-image:url('img/down.gif');
+            background-repeat: no-repeat;
+            background-position:3px center;
+            padding-left:20px;
+            width: 130px;
+            height: 26px;
+        }
+        #menu>li{
+            text-align: center;
+            width: 130px;
+            height: 26px;
+            float: left;
+            list-style: none;
+            background-color: #ff0036;
+            cursor:pointer;
+            padding-top:3px;
+            padding-bottom: 3px;
+        }
+        #menu ul{
+            display: none;
+        }
+        #menu ul li{
+            width: 130px;
+            height: 26px;
+            text-align: center;
+            padding-top:3px;
+            padding-bottom: 3px;
+            background: #666;
+            color: white;
+        }
+        #menu ul li:nth-child(1){
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="nav">
+    <ul id="menu">
+        <li class="main">
+            <a href="#">菜单项1</a>
+            <ul>
+                <li>子菜单11</li>
+                <li>子菜单22</li>
+            </ul>
+        </li>
+        <li class="main">
+            <a href="#">菜单项2</a>
+            <ul>
+                <li>子菜单21</li>
+                <li>子菜单22</li>
+            </ul>
+        </li>
+        <li class="main">
+            <a href="#">菜单项3</a>
+            <ul>
+                <li>子菜单31</li>
+                <li>子菜单32</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script src="javascript/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        $('.main a').hover(function () {
+            $(this).next('ul').slideDown('slow');
+            $(this).css('background-image',"url('img/up.gif')");
+        },function () {
+            $(this).next('ul').slideUp('slow');
+            $(this).css('background-image',"url('img/down.gif')");
+        })
+    });
+
+</script>
+</body>
+</html>

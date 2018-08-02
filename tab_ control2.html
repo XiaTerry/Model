@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选项卡2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html ,body{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        #tab{
+            width: 320px;
+            height: 300px;
+        }
+        #tab ul{
+            height: 30px;
+        }
+        #tab .tab_menu li{
+            width: 50px;
+            height: 30px;
+            list-style: none;
+            float: left;
+            background-color: #666;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 5px;
+            padding: 0 6px;
+            border:1px solid white;
+            cursor:pointer;
+        }
+        #tab .tab_menu .menu_selected{
+            border: 1px solid #666;
+            color: white;
+        }
+        #tab .box{
+            width: 100%;
+            height: 270px;
+            box-sizing: border-box;
+            padding: 10px;
+            background: #666;
+            margin-top: 2px;
+        }
+        .box div{
+            display: block;
+            font-size: 20px;
+            color: white;
+        }
+        .box .hide{
+            display: none;
+
+        }
+    </style>
+</head>
+<body>
+<div id="tab">
+    <div class="tab_menu">
+        <ul>
+            <li class="menu_selected">标签1</li>
+            <li>标签2</li>
+            <li>标签3</li>
+        </ul>
+    </div>
+    <div class="box">
+        <div>我是标签1</div>
+        <div class="hide">我是标签2</div>
+        <div class="hide">我是标签3</div>
+    </div>
+</div>
+<script src="javascript/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        $('.tab_menu li').on('mouseover',function () {
+            $(this).addClass('menu_selected').siblings().removeClass('menu_selected');
+            $('.box div').eq($(this).index()).removeClass('hide').siblings().addClass('hide');
+        })
+    });
+</script>
+</body>
+</html>

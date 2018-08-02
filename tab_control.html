@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选项卡1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .tab{
+            width: 240px;
+            height: 124px;
+        }
+        .tab .tab_menu{
+            width: 240px;
+            height: 20px;
+        }
+        .tab .tab_menu .menu_selected{
+            background: darkblue;
+            color: white;
+        }
+        .tab .tab_menu li{
+            float: left;
+            list-style: none;
+            border:1px solid #666;
+            font-size: 14px;
+            padding: 0 5px;
+            margin-right: 4px;
+            cursor: pointer;
+            text-align:center;
+            background: #F1F1F1;
+        }
+        .tab .tab_box{
+            width: 100%;
+            height: 100px;
+            border: 1px solid #666;
+            font-size: 14px;
+        }
+        .tab_box div{
+            display: block;
+        }
+        .tab_box .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="tab">
+    <div class="tab_menu">
+        <ul>
+            <li class="menu_selected">时事</li>
+            <li>体育</li>
+            <li>娱乐</li>
+        </ul>
+    </div>
+    <div class="tab_box">
+        <div>时事</div>
+        <div class="hide">体育</div>
+        <div class="hide">娱乐</div>
+    </div>
+</div>
+<script src="javascript/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        $('.tab_menu li').on('click',function () {
+            $(this).addClass('menu_selected').siblings().removeClass('menu_selected');
+            $('.tab_box div').eq($(this).index()).removeClass('hide').siblings().addClass('hide');
+        });
+    });
+</script>
+</body>
+</html>
