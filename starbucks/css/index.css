@@ -350,7 +350,7 @@ a{
 }
 #content4{
     margin-left: 30%;
-    height: 418px;
+    height: 218px;
     background-color: #fdfdfd;
 }
 #content4 .title2 h2{
@@ -364,8 +364,64 @@ a{
     height: 25px;
     text-align: center;
 }
+#content5{
+    margin-left: 30%;
+    height: 280px;
+    position:relative;
+}
+#content5 .footer img{
+    /*float: left;*/
+    width: 290px;
+    height: 168px;
+}
+#content5 .footer:nth-child(1) img{
+    margin-left: 20px;
+}
+#content5 .left img,#content5 .right img{
+    width: 18px;
+    height: 18px;
+    margin: 5px;
+}
+#content5 .left {
+    width:30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+}
+#content5 .right{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+}
+#content5 .right{
+    right: 10px;
+}
+#content5 .footer{
+    width: 1266px;
+    height: 249px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /*background-color: brown;*/
 
-
+}
+#content5 .footer .coffee{
+    width: 290px;
+    height: 168px;
+    background-color: lime;
+    float: left;
+    margin-top: 30px;
+    margin-right: 20px;
+    text-align: center;
+}
+#content5 .footer .coffee p{
+    width: 290px;
+    height: 25px;
+}
 
 
 
