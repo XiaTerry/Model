@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .dialog-mask{
+            position:absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color:rgba(30,116,168,0.9);
+            filter:opacity(0.5);
+        }
+        .dialog-content{
+            position:absolute;
+            height: 400px;
+            width: 500px;
+            top: 50%;
+            left: 50%;
+            margin-left: -250px;
+            margin-top: -200px;
+            border-radius:15px;
+            background-color:white;
+        }
+        .dialog-content-title{
+            height: 50px;
+            color:black;
+            border-bottom-style: dashed;
+            border-bottom-width: 1px;
+            border-bottom-color: bule;
+            line-height: 50px;
+            padding: 0 10px;
+            border-top-right-radius:15px;
+            border-top-left-radius:15px;
+        }
+        .dialog-content-title-header{
+            float: left;
+            font-size: 20px;
+        }
+        #close{
+            float:right;
+            cursor:pointer;
+            margin-top: 15px;
+        }
+        #loginName{
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <header-nav @login="isLogin">
+        <div slot="login">
+            <button @click="isLogin=true" type="button" class="btn btn-default navbar-btn">登录</button>
+            <button @click="isRis=true" type="button" class="btn btn-default navbar-btn">注册</button>
+        </div>
+    </header-nav>
+    <my-dialog v-show="isLogin" @close="isLogin=false">
+        <span slot="title">登录</span>
+        <form class="form-horizontal" slot="content">
+            <div class="form-group" id="loginName">
+                <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Sign in</button>
+                </div>
+            </div>
+        </form>
+    </my-dialog>
+    <my-dialog v-show="isRis" @close="isRis=false">
+        <span slot="title">注册</span>
+        <form class="form-horizontal" slot="content">
+            <div class="form-group" id="loginName">
+                <label for="inputEmail3" class="col-sm-2 control-label">Phone</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="Phone">
+                </div>
+            </div>
+            <div class="form-group" id="loginName">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Register</button>
+                </div>
+            </div>
+        </form>
+        </form>
+    </my-dialog>
+</div>
+
+<template id="dialog">
+    <div class="dialog-mask">
+        <div class="dialog-content">
+            <div class="dialog-content-title">
+                <div class="dialog-content-title-header">
+                    <slot name="title"></slot>
+                </div>
+                <span class="glyphicon glyphicon-remove" aria-hidden="true" @click="$emit('close')" id="close"></span>
+            </div>
+            <div class="dialog-content-container">
+                <slot name="content"></slot>
+            </div>
+        </div>
+    </div>
+</template>
+<template id="header-nav">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <slot name="login"></slot>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</template>
+<script src="vue.js"></script>
+<script>
+    let vm = new Vue({
+        el:'#app',
+        data:{
+            isLogin:false,
+            isRis:false
+        },
+        components:{
+            'my-dialog':{
+                template:'#dialog',
+            },
+            'header-nav':{
+                template:'#header-nav'
+            }}
+    })
+</script>
+</body>
+</html>

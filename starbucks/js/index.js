@@ -53,4 +53,17 @@ $(function () {
         timer = setInterval(play,speed)
     };
     timer = setInterval(play,speed);
+    let wid = 500;
+    $('#content5 .right').on('click',function(){
+        $('#content5 .footer').css({
+            transition:'transform .8s ease',
+            transform:'translateX(-'+wid+'px)'
+        });
+    });
+    $('#content5 .left').on('click',function(){
+        $('#content5 .footer').css({
+            transition:'transform .8s ease',
+            transform:'translateX(0)'
+        });
+    })
 });
