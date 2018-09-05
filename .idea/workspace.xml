@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41fc5e32-480e-496f-9003-30aabd43e6d8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/aimed-button.html" beforeDir="false" afterPath="$PROJECT_DIR$/aimed-button.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/con-circle.html" beforeDir="false" afterPath="$PROJECT_DIR$/con-circle.html" afterDir="false" />
+    <list default="true" id="41fc5e32-480e-496f-9003-30aabd43e6d8" name="Default" comment="导航条和登录注册弹出框。">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tmall" beforeDir="false" afterPath="$PROJECT_DIR$/Tmall" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,35 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="con-circle.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/con-circle.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1408">
-              <caret line="64" column="7" selection-start-line="64" selection-start-column="7" selection-end-line="64" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loader.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/loader.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dialog.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dialog.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="182" column="20" selection-start-line="182" selection-start-column="20" selection-end-line="182" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -141,11 +113,6 @@
               <item name="Model" type="b2602c69:ProjectViewProjectNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -155,13 +122,14 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/myfile/vue-cli/vueapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -228,6 +196,7 @@
       <workItem from="1533997825523" duration="853000" />
       <workItem from="1534085380254" duration="355000" />
       <workItem from="1534174529105" duration="43000" />
+      <workItem from="1536072760998" duration="532000" />
     </task>
     <task id="LOCAL-00001" summary="四方型旋转">
       <created>1532266900498</created>
@@ -450,16 +419,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121624000" />
+    <option name="totallyTimeSpent" value="122156000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="281" y="5" width="906" height="683" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23156682" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3290441" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -472,7 +441,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,14 +478,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="导航条和登录注册弹出框。" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/starbucks/index.html" />
-    <entry file="file://$PROJECT_DIR$/starbucks/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9240">
-          <caret line="420" column="17" selection-start-line="420" selection-start-column="17" selection-end-line="420" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/starbucks/index.html" />
     <entry file="file://$PROJECT_DIR$/starbucks/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -834,6 +794,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="182" column="20" selection-start-line="182" selection-start-column="20" selection-end-line="182" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rect-button/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rect-button/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
